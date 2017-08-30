@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5E6F2C1F5692D40064F417 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F2B1F5692D40064F417 /* Signin.storyboard */; };
 		ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499911F4D5031004B9462 /* AppDelegate.swift */; };
 		ABE499941F4D5031004B9462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499931F4D5031004B9462 /* ViewController.swift */; };
 		ABE499971F4D5031004B9462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE499951F4D5031004B9462 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		159BA10D0238E4D6A6DDB7D6 /* Pods-Sharefit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.release.xcconfig"; sourceTree = "<group>"; };
 		4E3189DCC099CFDACC0EFC97 /* Pods-Sharefit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.debug.xcconfig"; sourceTree = "<group>"; };
+		AB5E6F2B1F5692D40064F417 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		ABE4998E1F4D5031004B9462 /* Sharefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE499911F4D5031004B9462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE499931F4D5031004B9462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				ABE499911F4D5031004B9462 /* AppDelegate.swift */,
 				ABE499931F4D5031004B9462 /* ViewController.swift */,
 				ABE499951F4D5031004B9462 /* Main.storyboard */,
+				AB5E6F2B1F5692D40064F417 /* Signin.storyboard */,
 				ABE499981F4D5031004B9462 /* Assets.xcassets */,
 				ABE4999A1F4D5031004B9462 /* LaunchScreen.storyboard */,
 				ABE4999D1F4D5031004B9462 /* Info.plist */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5E6F2C1F5692D40064F417 /* Signin.storyboard in Resources */,
 				ABE4999C1F4D5031004B9462 /* LaunchScreen.storyboard in Resources */,
 				ABE499991F4D5031004B9462 /* Assets.xcassets in Resources */,
 				ABE499971F4D5031004B9462 /* Main.storyboard in Resources */,
@@ -376,6 +380,7 @@
 				ABE499A21F4D5031004B9462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
