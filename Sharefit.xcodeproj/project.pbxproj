@@ -12,9 +12,12 @@
 		ABE499971F4D5031004B9462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE499951F4D5031004B9462 /* Main.storyboard */; };
 		ABE499991F4D5031004B9462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE499981F4D5031004B9462 /* Assets.xcassets */; };
 		ABE4999C1F4D5031004B9462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE4999A1F4D5031004B9462 /* LaunchScreen.storyboard */; };
+		B93F2469F8FB3FEDF59C7840 /* Pods_Sharefit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3744E8DD3C2B057B8FC8CF /* Pods_Sharefit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		159BA10D0238E4D6A6DDB7D6 /* Pods-Sharefit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.release.xcconfig"; sourceTree = "<group>"; };
+		4E3189DCC099CFDACC0EFC97 /* Pods-Sharefit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.debug.xcconfig"; sourceTree = "<group>"; };
 		ABE4998E1F4D5031004B9462 /* Sharefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE499911F4D5031004B9462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE499931F4D5031004B9462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		ABE499981F4D5031004B9462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE4999B1F4D5031004B9462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABE4999D1F4D5031004B9462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3744E8DD3C2B057B8FC8CF /* Pods_Sharefit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sharefit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93F2469F8FB3FEDF59C7840 /* Pods_Sharefit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				ABE499901F4D5031004B9462 /* Sharefit */,
 				ABE4998F1F4D5031004B9462 /* Products */,
+				D5B0A197610AC4A58C3291D2 /* Pods */,
+				E13B2190062721FE43AF3FE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Sharefit;
 			sourceTree = "<group>";
 		};
+		D5B0A197610AC4A58C3291D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E3189DCC099CFDACC0EFC97 /* Pods-Sharefit.debug.xcconfig */,
+				159BA10D0238E4D6A6DDB7D6 /* Pods-Sharefit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E13B2190062721FE43AF3FE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB3744E8DD3C2B057B8FC8CF /* Pods_Sharefit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE499A01F4D5031004B9462 /* Build configuration list for PBXNativeTarget "Sharefit" */;
 			buildPhases = (
+				DBB8F3D0EBDB65747099AD5D /* [CP] Check Pods Manifest.lock */,
 				ABE4998A1F4D5031004B9462 /* Sources */,
 				ABE4998B1F4D5031004B9462 /* Frameworks */,
 				ABE4998C1F4D5031004B9462 /* Resources */,
+				3472923AD23169852FD42622 /* [CP] Embed Pods Frameworks */,
+				C0C9B412814FFBA366C7AD8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3472923AD23169852FD42622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0C9B412814FFBA366C7AD8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB8F3D0EBDB65747099AD5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABE4998A1F4D5031004B9462 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		ABE499A11F4D5031004B9462 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E3189DCC099CFDACC0EFC97 /* Pods-Sharefit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sharefit/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		ABE499A21F4D5031004B9462 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159BA10D0238E4D6A6DDB7D6 /* Pods-Sharefit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sharefit/Info.plist;
