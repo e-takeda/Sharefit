@@ -16,6 +16,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        // フォントを変えようとしたが、エラー。
+        // navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIFont.fontNames(forFamilyName: "Cochin")]
+    
+        
+
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -13,14 +13,27 @@ import NCMB
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    
+    
+    
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.01, green: 0.73, blue: 0.82, alpha: 1.0)
+        
+        
+        
+        
+        
         NCMB.setApplicationKey("108a378a7f6b4340a1b4d8cccb5b8d1153ecd4d80367ca2d13a0e5e55ea3f867", clientKey: "af15d9d0816541d8da78de8ef03bd8a4cbcfb5875d5c79cadc102e521d7f850a")
         
+        
+        
+        
+        /*
         let ud = UserDefaults.standard
         let isLogin = ud.bool(forKey: "isLogin")
         
@@ -43,11 +56,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.makeKeyAndVisible()
             
         }
-        
-        
-        
+        */
         
         return true
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
