@@ -14,8 +14,13 @@
 		AB5E6F371F5698770064F417 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F361F5698770064F417 /* home@2x.png */; };
 		AB5E6F391F5698910064F417 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F381F5698910064F417 /* search@2x.png */; };
 		AB5E6F3B1F569CE00064F417 /* feather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F3A1F569CE00064F417 /* feather@2x.png */; };
-		AB5E6F3D1F56A2A50064F417 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F3C1F56A2A50064F417 /* MyTabBarController.swift */; };
 		AB5E6F3F1F56A7570064F417 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F3E1F56A7570064F417 /* SignUpViewController.swift */; };
+		AB5E6F431F5FC4AB0064F417 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F421F5FC4AB0064F417 /* RootTabBarController.swift */; };
+		AB5E6F451F5FC73D0064F417 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F441F5FC73D0064F417 /* SignInViewController.swift */; };
+		AB5E6F491F5FCF390064F417 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F481F5FCF390064F417 /* gear@2x.png */; };
+		AB5E6F4D1F5FDCF80064F417 /* Heart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F4C1F5FDCF80064F417 /* Heart@2x.png */; };
+		AB5E6F4F1F5FDF1B0064F417 /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F4E1F5FDF1B0064F417 /* OthersViewController.swift */; };
+		AB5E6F511F5FDF4D0064F417 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F501F5FDF4D0064F417 /* SettingViewController.swift */; };
 		ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499911F4D5031004B9462 /* AppDelegate.swift */; };
 		ABE499941F4D5031004B9462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499931F4D5031004B9462 /* ViewController.swift */; };
 		ABE499971F4D5031004B9462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE499951F4D5031004B9462 /* Main.storyboard */; };
@@ -34,8 +39,13 @@
 		AB5E6F361F5698770064F417 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
 		AB5E6F381F5698910064F417 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		AB5E6F3A1F569CE00064F417 /* feather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feather@2x.png"; sourceTree = "<group>"; };
-		AB5E6F3C1F56A2A50064F417 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		AB5E6F3E1F56A7570064F417 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AB5E6F421F5FC4AB0064F417 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		AB5E6F441F5FC73D0064F417 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AB5E6F481F5FCF390064F417 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		AB5E6F4C1F5FDCF80064F417 /* Heart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart@2x.png"; sourceTree = "<group>"; };
+		AB5E6F4E1F5FDF1B0064F417 /* OthersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
+		AB5E6F501F5FDF4D0064F417 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		ABE4998E1F4D5031004B9462 /* Sharefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE499911F4D5031004B9462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE499931F4D5031004B9462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,10 +71,12 @@
 		AB5E6F2D1F5695570064F417 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AB5E6F4C1F5FDCF80064F417 /* Heart@2x.png */,
 				AB5E6F2E1F5698420064F417 /* trainning@2x.png */,
 				AB5E6F381F5698910064F417 /* search@2x.png */,
 				AB5E6F361F5698770064F417 /* home@2x.png */,
 				AB5E6F3A1F569CE00064F417 /* feather@2x.png */,
+				AB5E6F481F5FCF390064F417 /* gear@2x.png */,
 				AB5E6F321F5698630064F417 /* MoreFilled@2x.png */,
 				AB5E6F341F56986C0064F417 /* LineChart@2x.png */,
 			);
@@ -94,9 +106,12 @@
 			children = (
 				AB5E6F2D1F5695570064F417 /* images */,
 				ABE499911F4D5031004B9462 /* AppDelegate.swift */,
+				AB5E6F421F5FC4AB0064F417 /* RootTabBarController.swift */,
 				ABE499931F4D5031004B9462 /* ViewController.swift */,
-				AB5E6F3C1F56A2A50064F417 /* MyTabBarController.swift */,
+				AB5E6F4E1F5FDF1B0064F417 /* OthersViewController.swift */,
+				AB5E6F501F5FDF4D0064F417 /* SettingViewController.swift */,
 				AB5E6F3E1F56A7570064F417 /* SignUpViewController.swift */,
+				AB5E6F441F5FC73D0064F417 /* SignInViewController.swift */,
 				ABE499951F4D5031004B9462 /* Main.storyboard */,
 				AB5E6F2B1F5692D40064F417 /* Signin.storyboard */,
 				ABE499981F4D5031004B9462 /* Assets.xcassets */,
@@ -188,11 +203,13 @@
 				AB5E6F351F56986C0064F417 /* LineChart@2x.png in Resources */,
 				AB5E6F371F5698770064F417 /* home@2x.png in Resources */,
 				AB5E6F2C1F5692D40064F417 /* Signin.storyboard in Resources */,
+				AB5E6F4D1F5FDCF80064F417 /* Heart@2x.png in Resources */,
 				AB5E6F2F1F5698420064F417 /* trainning@2x.png in Resources */,
 				AB5E6F3B1F569CE00064F417 /* feather@2x.png in Resources */,
 				AB5E6F331F5698630064F417 /* MoreFilled@2x.png in Resources */,
 				ABE4999C1F4D5031004B9462 /* LaunchScreen.storyboard in Resources */,
 				ABE499991F4D5031004B9462 /* Assets.xcassets in Resources */,
+				AB5E6F491F5FCF390064F417 /* gear@2x.png in Resources */,
 				AB5E6F391F5698910064F417 /* search@2x.png in Resources */,
 				ABE499971F4D5031004B9462 /* Main.storyboard in Resources */,
 			);
@@ -254,9 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE499941F4D5031004B9462 /* ViewController.swift in Sources */,
+				AB5E6F4F1F5FDF1B0064F417 /* OthersViewController.swift in Sources */,
+				AB5E6F431F5FC4AB0064F417 /* RootTabBarController.swift in Sources */,
 				ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */,
+				AB5E6F451F5FC73D0064F417 /* SignInViewController.swift in Sources */,
+				AB5E6F511F5FDF4D0064F417 /* SettingViewController.swift in Sources */,
 				AB5E6F3F1F56A7570064F417 /* SignUpViewController.swift in Sources */,
-				AB5E6F3D1F56A2A50064F417 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

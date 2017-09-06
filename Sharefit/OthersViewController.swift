@@ -1,22 +1,18 @@
 //
-//  MyTabBarController.swift
+//  OthersViewController.swift
 //  Sharefit
 //
-//  Created by nttr on 2017/08/30.
+//  Created by nttr on 2017/09/06.
 //  Copyright © 2017年 nttr. All rights reserved.
 //
 
 import UIKit
 
-class MyTabBarController: UITabBarController {
+class OthersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tabBar.barTintColor = UIColor.black
-        
-        
-
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Cochin", size: 20)!]
     }
 
     override func didReceiveMemoryWarning() {

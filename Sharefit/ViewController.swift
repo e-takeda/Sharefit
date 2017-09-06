@@ -11,14 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    // テスト
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
+        // ナビゲーションバーのタイトルのフォントと色変更
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Cochin", size: 20)!]
         
         

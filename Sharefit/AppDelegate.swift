@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        /*
+        // /*
         let ud = UserDefaults.standard
         let isLogin = ud.bool(forKey: "isLogin")
         
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // ログイン中だったら
             self.window = UIWindow(frame: UIScreen.main.bounds)
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let rootViewController = storyboard.instantiateViewController(withIdentifier: "rootTabBarController")
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootTabBarController")
             self.window?.rootViewController = rootViewController
             self.window?.backgroundColor = UIColor.white
             self.window?.makeKeyAndVisible()
@@ -50,13 +50,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // ログインしていなかったら
             self.window = UIWindow(frame: UIScreen.main.bounds)
             let storyboard = UIStoryboard(name: "Signin", bundle: Bundle.main)
-            let rootViewController = storyboard.instantiateViewController(withIdentifier: "rootNavigationController")
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootNavigationController")
             self.window?.rootViewController = rootViewController
             self.window?.backgroundColor = UIColor.white
             self.window?.makeKeyAndVisible()
             
         }
-        */
+        // */
         
         return true
         
