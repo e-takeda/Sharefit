@@ -39,10 +39,33 @@ class SettingViewController: UIViewController {
                 }
             })
         }
+        let deleteAction = UIAlertAction(title: "退会", style: .default) { (action) in
+            
+            let user = NCMBUser.current()
+            user?.deleteInBackground({ (error) in
+                if error != nil {
+                    print(error)
+                } else {
+                    // ログアウト成功
+                    let storyboard = UIStoryboard(name: "Signin", bundle: Bundle.main)
+                    let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootNavigationController")
+                    UIApplication.shared.keyWindow?.rootViewController = rootViewController
+                    // ログアウト状態の保持
+                    let ud = UserDefaults.standard
+                    ud.set(false, forKey: "isLogin")
+                    ud.synchronize()
+                    
+                }
+            })
+            
+            
+        }
+        
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel) { (action) in
             alertController.dismiss(animated: true, completion: nil)
         }
         alertController.addAction(signOutAtion)
+        alertController.addAction(deleteAction)
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
         
