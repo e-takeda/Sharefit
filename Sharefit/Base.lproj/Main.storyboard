@@ -115,7 +115,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Others" id="hI2-CB-eXX">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="zWI-bn-Ztd">
+                        <barButtonItem key="leftBarButtonItem" title="プロフ" id="zWI-bn-Ztd">
                             <connections>
                                 <segue destination="aeT-Ga-Zd0" kind="show" id="XNZ-hE-yfi"/>
                             </connections>
@@ -218,6 +218,9 @@
                                 <rect key="frame" x="168" y="163" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="プロフィール編集"/>
+                                <connections>
+                                    <segue destination="uAe-sl-TTN" kind="presentation" id="gFu-mk-lwE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkZ-RV-6OE">
                                 <rect key="frame" x="32" y="201" width="42" height="21"/>
@@ -240,6 +243,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEe-GY-aKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1405.5999999999999" y="2586.6566716641682"/>
+        </scene>
+        <!--プロフィール編集-->
+        <scene sceneID="o7n-tj-o0o">
+            <objects>
+                <viewController id="ew7-le-os1" customClass="EditUserInfoViewController" customModule="Sharefit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bp4-0X-IbV"/>
+                        <viewControllerLayoutGuide type="bottom" id="YtV-TU-Pxk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qgk-R3-H2q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザー名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZ3-az-yvz">
+                                <rect key="frame" x="77" y="241" width="221" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザーID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zf-ji-gTx">
+                                <rect key="frame" x="77" y="290" width="221" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="自己紹介" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bhc-uJ-aIz">
+                                <rect key="frame" x="67" y="345" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Fp-P9-ntB">
+                                <rect key="frame" x="131" y="103" width="112" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="プロフィール編集" id="o7k-L4-cs5">
+                        <barButtonItem key="leftBarButtonItem" title="キャンセル" id="jgc-gK-5qD">
+                            <connections>
+                                <action selector="closeEditViewController" destination="ew7-le-os1" id="kah-HC-68d"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="完了" id="VM9-Ez-npn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="introducdeTextView" destination="Bhc-uJ-aIz" id="O01-ah-1Yo"/>
+                        <outlet property="userIdTextField" destination="0zf-ji-gTx" id="qR0-b7-65L"/>
+                        <outlet property="userImageView" destination="8Fp-P9-ntB" id="4KP-fn-qET"/>
+                        <outlet property="userNameTextField" destination="BZ3-az-yvz" id="5RA-ku-hu1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49h-4B-X1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100" y="2633.4332833583212"/>
         </scene>
         <!--Root Tab Bar Controller-->
         <scene sceneID="Pu8-KW-zNB">
@@ -370,6 +432,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YyB-7n-JAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1848.8" y="-1043.0284857571214"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tT7-Ru-HqD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uAe-sl-TTN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QxZ-t3-MQG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ew7-le-os1" kind="relationship" relationship="rootViewController" id="9aS-Je-SyS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKu-3o-v4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2160.8000000000002" y="2633.4332833583212"/>
         </scene>
     </scenes>
     <resources>
