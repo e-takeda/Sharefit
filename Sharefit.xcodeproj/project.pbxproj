@@ -33,6 +33,7 @@
 		ABD7993E1F7B798C006B75F3 /* Checkmark-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD7993D1F7B798C006B75F3 /* Checkmark-48@2x.png */; };
 		ABD799421F7B7FFF006B75F3 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799411F7B7FFF006B75F3 /* PostViewController.swift */; };
 		ABD799441F7B82E3006B75F3 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799431F7B82E3006B75F3 /* BorderButton.swift */; };
+		ABD7994A1F7B97E5006B75F3 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799491F7B97E5006B75F3 /* UserPageViewController.swift */; };
 		ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499911F4D5031004B9462 /* AppDelegate.swift */; };
 		ABE499941F4D5031004B9462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499931F4D5031004B9462 /* ViewController.swift */; };
 		ABE499971F4D5031004B9462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE499951F4D5031004B9462 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		ABD7993D1F7B798C006B75F3 /* Checkmark-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark-48@2x.png"; sourceTree = "<group>"; };
 		ABD799411F7B7FFF006B75F3 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ABD799431F7B82E3006B75F3 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		ABD799491F7B97E5006B75F3 /* UserPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
 		ABE4998E1F4D5031004B9462 /* Sharefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE499911F4D5031004B9462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE499931F4D5031004B9462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				AB5E6F4E1F5FDF1B0064F417 /* OthersViewController.swift */,
 				AB5E6F501F5FDF4D0064F417 /* SettingViewController.swift */,
 				AB5E6F3E1F56A7570064F417 /* SignUpViewController.swift */,
+				ABD799491F7B97E5006B75F3 /* UserPageViewController.swift */,
 				ABD799411F7B7FFF006B75F3 /* PostViewController.swift */,
 				AB5E6F441F5FC73D0064F417 /* SignInViewController.swift */,
 				AB5E6F521F78A5FA0064F417 /* EditUserInfoViewController.swift */,
@@ -351,6 +354,7 @@
 				AB5E6F431F5FC4AB0064F417 /* RootTabBarController.swift in Sources */,
 				ABD799441F7B82E3006B75F3 /* BorderButton.swift in Sources */,
 				ABD799421F7B7FFF006B75F3 /* PostViewController.swift in Sources */,
+				ABD7994A1F7B97E5006B75F3 /* UserPageViewController.swift in Sources */,
 				ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */,
 				AB5E6F451F5FC73D0064F417 /* SignInViewController.swift in Sources */,
 				AB5E6F511F5FDF4D0064F417 /* SettingViewController.swift in Sources */,

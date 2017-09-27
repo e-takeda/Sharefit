@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="1958" y="1790"/>
         </scene>
-        <!--View Controller-->
+        <!--User Page View Controller-->
         <scene sceneID="G4i-zd-cQC">
             <objects>
-                <viewController id="aeT-Ga-Zd0" sceneMemberID="viewController">
+                <viewController id="aeT-Ga-Zd0" customClass="UserPageViewController" customModule="Sharefit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jxK-rk-aqP"/>
                         <viewControllerLayoutGuide type="bottom" id="TzY-4v-RW7"/>
@@ -319,6 +319,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="userImageView" destination="QrQ-dK-eV2" id="fLn-j1-Jao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEe-GY-aKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

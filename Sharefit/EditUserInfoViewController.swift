@@ -8,6 +8,7 @@
 
 import UIKit
 import NCMB
+import NYXImagesKit
 
 class EditUserInfoViewController: UIViewController ,UITextFieldDelegate ,UITextViewDelegate ,UIImagePickerControllerDelegate ,UINavigationControllerDelegate{
     
