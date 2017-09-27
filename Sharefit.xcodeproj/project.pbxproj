@@ -22,6 +22,16 @@
 		AB5E6F4F1F5FDF1B0064F417 /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F4E1F5FDF1B0064F417 /* OthersViewController.swift */; };
 		AB5E6F511F5FDF4D0064F417 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F501F5FDF4D0064F417 /* SettingViewController.swift */; };
 		AB5E6F531F78A5FA0064F417 /* EditUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F521F78A5FA0064F417 /* EditUserInfoViewController.swift */; };
+		AB5E6F561F7B63750064F417 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E6F541F7B63750064F417 /* TimelineTableViewCell.swift */; };
+		AB5E6F571F7B63750064F417 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F551F7B63750064F417 /* TimelineTableViewCell.xib */; };
+		AB5E6F5B1F7B668B0064F417 /* heart-fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F581F7B668B0064F417 /* heart-fill@2x.png */; };
+		AB5E6F5C1F7B668B0064F417 /* heart-outline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F591F7B668B0064F417 /* heart-outline@2x.png */; };
+		AB5E6F5D1F7B668B0064F417 /* icons8-Speech Bubble-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F5A1F7B668B0064F417 /* icons8-Speech Bubble-50.png */; };
+		AB5E6F5F1F7B66C90064F417 /* icons8-More-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F5E1F7B66C90064F417 /* icons8-More-48@2x.png */; };
+		AB5E6F611F7B691D0064F417 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F601F7B691D0064F417 /* placeholder.jpg */; };
+		ABD7993A1F7B7908006B75F3 /* icons8-Delete-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD799391F7B7908006B75F3 /* icons8-Delete-48@2x.png */; };
+		ABD7993E1F7B798C006B75F3 /* Checkmark-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD7993D1F7B798C006B75F3 /* Checkmark-48@2x.png */; };
+		ABD799401F7B7AFE006B75F3 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7993F1F7B7AFE006B75F3 /* CommentViewController.swift */; };
 		ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499911F4D5031004B9462 /* AppDelegate.swift */; };
 		ABE499941F4D5031004B9462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499931F4D5031004B9462 /* ViewController.swift */; };
 		ABE499971F4D5031004B9462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE499951F4D5031004B9462 /* Main.storyboard */; };
@@ -48,6 +58,16 @@
 		AB5E6F4E1F5FDF1B0064F417 /* OthersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
 		AB5E6F501F5FDF4D0064F417 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		AB5E6F521F78A5FA0064F417 /* EditUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditUserInfoViewController.swift; sourceTree = "<group>"; };
+		AB5E6F541F7B63750064F417 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		AB5E6F551F7B63750064F417 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		AB5E6F581F7B668B0064F417 /* heart-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-fill@2x.png"; sourceTree = "<group>"; };
+		AB5E6F591F7B668B0064F417 /* heart-outline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-outline@2x.png"; sourceTree = "<group>"; };
+		AB5E6F5A1F7B668B0064F417 /* icons8-Speech Bubble-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Speech Bubble-50.png"; sourceTree = "<group>"; };
+		AB5E6F5E1F7B66C90064F417 /* icons8-More-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-More-48@2x.png"; sourceTree = "<group>"; };
+		AB5E6F601F7B691D0064F417 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		ABD799391F7B7908006B75F3 /* icons8-Delete-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Delete-48@2x.png"; sourceTree = "<group>"; };
+		ABD7993D1F7B798C006B75F3 /* Checkmark-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark-48@2x.png"; sourceTree = "<group>"; };
+		ABD7993F1F7B7AFE006B75F3 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		ABE4998E1F4D5031004B9462 /* Sharefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE499911F4D5031004B9462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE499931F4D5031004B9462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +96,13 @@
 				AB5E6F4C1F5FDCF80064F417 /* Heart@2x.png */,
 				AB5E6F2E1F5698420064F417 /* trainning@2x.png */,
 				AB5E6F381F5698910064F417 /* search@2x.png */,
+				ABD799391F7B7908006B75F3 /* icons8-Delete-48@2x.png */,
+				AB5E6F581F7B668B0064F417 /* heart-fill@2x.png */,
+				ABD7993D1F7B798C006B75F3 /* Checkmark-48@2x.png */,
+				AB5E6F591F7B668B0064F417 /* heart-outline@2x.png */,
+				AB5E6F601F7B691D0064F417 /* placeholder.jpg */,
+				AB5E6F5E1F7B66C90064F417 /* icons8-More-48@2x.png */,
+				AB5E6F5A1F7B668B0064F417 /* icons8-Speech Bubble-50.png */,
 				AB5E6F361F5698770064F417 /* home@2x.png */,
 				AB5E6F3A1F569CE00064F417 /* feather@2x.png */,
 				AB5E6F481F5FCF390064F417 /* gear@2x.png */,
@@ -112,7 +139,10 @@
 				ABE499931F4D5031004B9462 /* ViewController.swift */,
 				AB5E6F4E1F5FDF1B0064F417 /* OthersViewController.swift */,
 				AB5E6F501F5FDF4D0064F417 /* SettingViewController.swift */,
+				ABD7993F1F7B7AFE006B75F3 /* CommentViewController.swift */,
 				AB5E6F3E1F56A7570064F417 /* SignUpViewController.swift */,
+				AB5E6F541F7B63750064F417 /* TimelineTableViewCell.swift */,
+				AB5E6F551F7B63750064F417 /* TimelineTableViewCell.xib */,
 				AB5E6F441F5FC73D0064F417 /* SignInViewController.swift */,
 				AB5E6F521F78A5FA0064F417 /* EditUserInfoViewController.swift */,
 				ABE499951F4D5031004B9462 /* Main.storyboard */,
@@ -208,12 +238,20 @@
 				AB5E6F2C1F5692D40064F417 /* Signin.storyboard in Resources */,
 				AB5E6F4D1F5FDCF80064F417 /* Heart@2x.png in Resources */,
 				AB5E6F2F1F5698420064F417 /* trainning@2x.png in Resources */,
+				ABD7993E1F7B798C006B75F3 /* Checkmark-48@2x.png in Resources */,
+				AB5E6F5D1F7B668B0064F417 /* icons8-Speech Bubble-50.png in Resources */,
+				AB5E6F5F1F7B66C90064F417 /* icons8-More-48@2x.png in Resources */,
 				AB5E6F3B1F569CE00064F417 /* feather@2x.png in Resources */,
+				AB5E6F5B1F7B668B0064F417 /* heart-fill@2x.png in Resources */,
 				AB5E6F331F5698630064F417 /* MoreFilled@2x.png in Resources */,
+				ABD7993A1F7B7908006B75F3 /* icons8-Delete-48@2x.png in Resources */,
 				ABE4999C1F4D5031004B9462 /* LaunchScreen.storyboard in Resources */,
 				ABE499991F4D5031004B9462 /* Assets.xcassets in Resources */,
 				AB5E6F491F5FCF390064F417 /* gear@2x.png in Resources */,
+				AB5E6F611F7B691D0064F417 /* placeholder.jpg in Resources */,
+				AB5E6F571F7B63750064F417 /* TimelineTableViewCell.xib in Resources */,
 				AB5E6F391F5698910064F417 /* search@2x.png in Resources */,
+				AB5E6F5C1F7B668B0064F417 /* heart-outline@2x.png in Resources */,
 				ABE499971F4D5031004B9462 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -279,7 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD799401F7B7AFE006B75F3 /* CommentViewController.swift in Sources */,
 				ABE499941F4D5031004B9462 /* ViewController.swift in Sources */,
+				AB5E6F561F7B63750064F417 /* TimelineTableViewCell.swift in Sources */,
 				AB5E6F4F1F5FDF1B0064F417 /* OthersViewController.swift in Sources */,
 				AB5E6F431F5FC4AB0064F417 /* RootTabBarController.swift in Sources */,
 				ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */,

@@ -21,24 +21,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELR-eG-UAI">
-                                <rect key="frame" x="224" y="238" width="79" height="21"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="588" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-KI-vRf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="588" id="Ttj-Xw-WO4">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="588"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ttj-Xw-WO4" id="J2a-F6-IKP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="587.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sharefit" id="87e-sa-Fqq">
                         <barButtonItem key="leftBarButtonItem" image="Heart.png" id="G4o-p9-zoH"/>
-                        <barButtonItem key="rightBarButtonItem" image="feather.png" id="9tS-a4-cLD"/>
+                        <barButtonItem key="rightBarButtonItem" image="feather.png" id="9tS-a4-cLD">
+                            <connections>
+                                <segue destination="djG-ca-rdb" kind="show" id="lr8-YW-Bg8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="timelineTableView" destination="cEh-KI-vRf" id="AvT-s4-8sb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1280.8" y="-1933.5832083958023"/>
+        </scene>
+        <!--新規投稿-->
+        <scene sceneID="pWx-IX-isy">
+            <objects>
+                <viewController id="StK-jy-6fn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jt5-CB-ROf"/>
+                        <viewControllerLayoutGuide type="bottom" id="HEE-Ju-Wp6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bbl-ZZ-Trj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="新規投稿" id="Tr5-fW-icJ">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-Delete-48.png" id="yqA-Fz-gz6"/>
+                        <barButtonItem key="rightBarButtonItem" image="Checkmark-48.png" id="5pF-KM-8go"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7B-UC-1hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="-2746.776611694153"/>
         </scene>
         <!--Search-->
         <scene sceneID="CUX-pK-gUU">
@@ -309,6 +346,7 @@
                 <tabBarController storyboardIdentifier="RootTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="wvL-BA-CPO" customClass="RootTabBarController" customModule="Sharefit" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hC8-0a-092">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -451,14 +489,35 @@
             </objects>
             <point key="canvasLocation" x="2160.8000000000002" y="2633.4332833583212"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I8R-LQ-8Sz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="djG-ca-rdb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="o2r-SS-vvi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Gj-IF-qmt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="StK-jy-6fn" kind="relationship" relationship="rootViewController" id="TWz-H4-roT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bks-qF-ARO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280.8" y="-2746.776611694153"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Checkmark-48.png" width="24" height="24"/>
         <image name="Heart.png" width="25" height="25"/>
         <image name="LineChart.png" width="25" height="25"/>
         <image name="MoreFilled.png" width="25" height="25"/>
         <image name="feather.png" width="25" height="25"/>
         <image name="gear@2x.png" width="16" height="16"/>
         <image name="home.png" width="24" height="24"/>
+        <image name="icons8-Delete-48.png" width="24" height="24"/>
         <image name="search.png" width="25" height="25"/>
         <image name="trainning.png" width="25" height="25"/>
     </resources>

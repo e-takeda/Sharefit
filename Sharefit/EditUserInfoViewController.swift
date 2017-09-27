@@ -22,6 +22,8 @@ class EditUserInfoViewController: UIViewController ,UITextFieldDelegate ,UITextV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Cochin", size: 20)!]
+        
         userNameTextField.delegate = self
         userIdTextField.delegate = self
         introducdeTextView.delegate = self
