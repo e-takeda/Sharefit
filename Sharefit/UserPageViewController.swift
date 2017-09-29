@@ -38,6 +38,11 @@ class UserPageViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        let user = NCMBUser.current()
+        userDisplayNameLabel.text = user?.object(forKey: "displayName") as? String
+        userIntroductionTextView.text = user?.object(forKey: "introduction") as? String
+        self.navigationController?.navigationItem.title = user?.object(forKey: "userName") as? String
+        
         let file = NCMBFile.file(withName: NCMBUser.current().objectId, data: nil) as! NCMBFile
         file.getDataInBackground { (data, error) in
             if error != nil {

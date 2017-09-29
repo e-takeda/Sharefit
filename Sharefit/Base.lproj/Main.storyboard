@@ -248,7 +248,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QrQ-dK-eV2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QrQ-dK-eV2">
                                 <rect key="frame" x="28" y="95" width="98" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -320,7 +320,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="userDisplayNameLabel" destination="lkZ-RV-6OE" id="Tna-nI-Zf3"/>
                         <outlet property="userImageView" destination="QrQ-dK-eV2" id="fLn-j1-Jao"/>
+                        <outlet property="userIntroductionTextView" destination="IzB-71-LPa" id="h8N-Hr-lXO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEe-GY-aKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -381,10 +383,14 @@
                                 <action selector="closeEditViewController" destination="ew7-le-os1" id="kah-HC-68d"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="完了" id="VM9-Ez-npn"/>
+                        <barButtonItem key="rightBarButtonItem" title="完了" id="VM9-Ez-npn">
+                            <connections>
+                                <action selector="saveUserInfo" destination="ew7-le-os1" id="cce-92-jJv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="introducdeTextView" destination="Bhc-uJ-aIz" id="O01-ah-1Yo"/>
+                        <outlet property="introductionTextView" destination="Bhc-uJ-aIz" id="wtU-e8-gHK"/>
                         <outlet property="userIdTextField" destination="0zf-ji-gTx" id="qR0-b7-65L"/>
                         <outlet property="userImageView" destination="8Fp-P9-ntB" id="4KP-fn-qET"/>
                         <outlet property="userNameTextField" destination="BZ3-az-yvz" id="5RA-ku-hu1"/>
@@ -572,6 +578,7 @@
         <image name="gear@2x.png" width="16" height="16"/>
         <image name="home.png" width="24" height="24"/>
         <image name="icons8-Delete-48.png" width="24" height="24"/>
+        <image name="placeholder.jpg" width="300" height="300"/>
         <image name="search.png" width="25" height="25"/>
         <image name="trainning.png" width="25" height="25"/>
     </resources>

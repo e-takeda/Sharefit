@@ -15,7 +15,7 @@ class EditUserInfoViewController: UIViewController ,UITextFieldDelegate ,UITextV
     @IBOutlet var userImageView: UIImageView!
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var userIdTextField: UITextField!
-    @IBOutlet var introducdeTextView: UITextView!
+    @IBOutlet var introductionTextView: UITextView!
 
     
     
@@ -25,13 +25,33 @@ class EditUserInfoViewController: UIViewController ,UITextFieldDelegate ,UITextV
         
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont(name: "Cochin", size: 20)!]
         
+        userImageView.layer.cornerRadius = userImageView.bounds.width / 2.0
+        userImageView.layer.masksToBounds = true
+        
         userNameTextField.delegate = self
         userIdTextField.delegate = self
-        introducdeTextView.delegate = self
+        introductionTextView.delegate = self
         
         let userId = NCMBUser.current().userName
         userIdTextField.text = userId
         
+        let file = NCMBFile.file(withName: NCMBUser.current().objectId, data: nil) as! NCMBFile
+        file.getDataInBackground { (data, error) in
+            if error != nil {
+                let alert = UIAlertController(title: "画像取得エラー", message: error!.localizedDescription, preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    
+                })
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                if data != nil {
+                    let image = UIImage(data: data!)
+                    self.userImageView.image = image
+                    
+                }
+            }
+        }
         
         
     }
@@ -120,6 +140,27 @@ class EditUserInfoViewController: UIViewController ,UITextFieldDelegate ,UITextV
         self.dismiss(animated: true, completion: nil)
         
     }
+    
+    @IBAction func saveUserInfo() {
+        let user = NCMBUser.current()
+        user?.setObject(userNameTextField.text, forKey: "displayName")
+        user?.setObject(userIdTextField.text, forKey: "userName")
+        user?.setObject(introductionTextView.text, forKey: "introduction")
+        user?.saveInBackground({ (error) in
+            if error != nil {
+                let alert = UIAlertController(title: "送信エラー", message: error!.localizedDescription, preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    
+                })
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
+        })
+    }
+
+    
     
     
 }
