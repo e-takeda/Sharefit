@@ -93,7 +93,7 @@
                 <outlet property="userImageView" destination="HQB-WZ-4vj" id="EEE-k5-PGu"/>
                 <outlet property="userNameLabel" destination="Bf5-vj-ZXs" id="XR3-TE-LIa"/>
             </connections>
-            <point key="canvasLocation" x="61.5" y="46"/>
+            <point key="canvasLocation" x="-73" y="-28"/>
         </tableViewCell>
     </objects>
     <resources>
