@@ -32,28 +32,46 @@ class EditUserInfoViewController: UIViewController ,UITextFieldDelegate ,UITextV
         userIdTextField.delegate = self
         introductionTextView.delegate = self
         
-        let userId = NCMBUser.current().userName
-        userIdTextField.text = userId
         
-        let file = NCMBFile.file(withName: NCMBUser.current().objectId, data: nil) as! NCMBFile
-        file.getDataInBackground { (data, error) in
-            if error != nil {
-                let alert = UIAlertController(title: "画像取得エラー", message: error!.localizedDescription, preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                    
-                })
-                alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
-            } else {
-                if data != nil {
-                    let image = UIImage(data: data!)
-                    self.userImageView.image = image
-                    
+        
+        if let user = NCMBUser.current() {
+            userNameTextField.text = user.object(forKey: "displayName") as? String
+            introductionTextView.text = user.object(forKey: "introduction") as? String
+            userIdTextField.text = user.userName
+            
+            
+            let file = NCMBFile.file(withName: user.objectId, data: nil) as! NCMBFile
+            file.getDataInBackground { (data, error) in
+                if error != nil {
+                    let alert = UIAlertController(title: "画像取得エラー", message: error!.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                        
+                    })
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    if data != nil {
+                        let image = UIImage(data: data!)
+                        self.userImageView.image = image
+                        
+                    }
                 }
             }
+
         }
-        
-        
+        else {
+            // NCMBUser.current()がnilだったとき
+            let storyboard = UIStoryboard(name: "SignIn", bundle: Bundle.main)
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootNavigationController")
+            UIApplication.shared.keyWindow?.rootViewController = rootViewController
+            
+            // ログイン状態の保持
+            let ud = UserDefaults.standard
+            ud.set(false, forKey: "isLogin")
+            ud.synchronize()
+        }
+
+
     }
 
     override func didReceiveMemoryWarning() {

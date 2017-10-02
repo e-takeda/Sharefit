@@ -38,28 +38,43 @@ class UserPageViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        let user = NCMBUser.current()
-        userDisplayNameLabel.text = user?.object(forKey: "displayName") as? String
-        userIntroductionTextView.text = user?.object(forKey: "introduction") as? String
-        self.navigationController?.navigationItem.title = user?.object(forKey: "userName") as? String
-        
-        let file = NCMBFile.file(withName: NCMBUser.current().objectId, data: nil) as! NCMBFile
-        file.getDataInBackground { (data, error) in
-            if error != nil {
-                let alert = UIAlertController(title: "画像取得エラー", message: error!.localizedDescription, preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                    
-                })
-                alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
-            } else {
-                if data != nil {
-                    let image = UIImage(data: data!)
-                    self.userImageView.image = image
-        
-    }
+        if let user = NCMBUser.current() {
+            userDisplayNameLabel.text = user.object(forKey: "displayName") as? String
+            userIntroductionTextView.text = user.object(forKey: "introduction") as? String
+            self.navigationItem.title = user.userName
+            
+            let file = NCMBFile.file(withName: user.objectId, data: nil) as! NCMBFile
+            file.getDataInBackground { (data, error) in
+                if error != nil {
+                    let alert = UIAlertController(title: "画像取得エラー", message: error!.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                        
+                    })
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    if data != nil {
+                        let image = UIImage(data: data!)
+                        self.userImageView.image = image
+                        
+                    }
+                }
             }
         }
+        
+        else {
+            // NCMBUser.current()がnilだったとき
+            let storyboard = UIStoryboard(name: "SignIn", bundle: Bundle.main)
+            let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootNavigationController")
+            UIApplication.shared.keyWindow?.rootViewController = rootViewController
+            
+            // ログイン状態の保持
+            let ud = UserDefaults.standard
+            ud.set(false, forKey: "isLogin")
+            ud.synchronize()
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
