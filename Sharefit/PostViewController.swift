@@ -129,7 +129,8 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 }
                 postObject?.setObject(self.postTextView.text!, forKey: "text")
                 postObject?.setObject(NCMBUser.current(), forKey: "user")
-                let url = "https://mb.api.cloud.nifty.com/2013-09-01/applications/vLEKsnidG4wHsPV7/publicFiles/" + file.name
+                let url = "https://mb.api.cloud.nifty.com/2013-09-01/applications/DoSWmydfKRGx9uj/publicFiles/" + file.name
+                
                 postObject?.setObject(url, forKey: "imageUrl")
                 postObject?.saveInBackground({ (error) in
                     if error != nil {
@@ -143,9 +144,13 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
                         self.tabBarController?.selectedIndex = 0
                     }
                 })
+              
+                self.dismiss(animated: true, completion: nil)
+                
             }
         }) { (progress) in
             print(progress)
+            
         }
     }
     

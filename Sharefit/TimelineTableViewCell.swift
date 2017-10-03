@@ -10,6 +10,8 @@ import UIKit
 
 class TimelineTableViewCell: UITableViewCell {
     
+    
+    
     @IBOutlet var userImageView: UIImageView!
     
     @IBOutlet var userNameLabel: UILabel!

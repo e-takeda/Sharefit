@@ -34,6 +34,9 @@
 		ABD799421F7B7FFF006B75F3 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799411F7B7FFF006B75F3 /* PostViewController.swift */; };
 		ABD799441F7B82E3006B75F3 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799431F7B82E3006B75F3 /* BorderButton.swift */; };
 		ABD7994A1F7B97E5006B75F3 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799491F7B97E5006B75F3 /* UserPageViewController.swift */; };
+		ABD7994C1F832BBA006B75F3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7994B1F832BBA006B75F3 /* Post.swift */; };
+		ABD7994E1F832CCE006B75F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7994D1F832CCE006B75F3 /* User.swift */; };
+		ABD799501F832CE5006B75F3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7994F1F832CE5006B75F3 /* Comment.swift */; };
 		ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499911F4D5031004B9462 /* AppDelegate.swift */; };
 		ABE499941F4D5031004B9462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499931F4D5031004B9462 /* ViewController.swift */; };
 		ABE499971F4D5031004B9462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE499951F4D5031004B9462 /* Main.storyboard */; };
@@ -72,6 +75,9 @@
 		ABD799411F7B7FFF006B75F3 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		ABD799431F7B82E3006B75F3 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		ABD799491F7B97E5006B75F3 /* UserPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
+		ABD7994B1F832BBA006B75F3 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ABD7994D1F832CCE006B75F3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ABD7994F1F832CE5006B75F3 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		ABE4998E1F4D5031004B9462 /* Sharefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE499911F4D5031004B9462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE499931F4D5031004B9462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 		ABD799481F7B8877006B75F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ABD7994B1F832BBA006B75F3 /* Post.swift */,
+				ABD7994D1F832CCE006B75F3 /* User.swift */,
+				ABD7994F1F832CE5006B75F3 /* Comment.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -352,10 +361,13 @@
 				AB5E6F561F7B63750064F417 /* TimelineTableViewCell.swift in Sources */,
 				AB5E6F4F1F5FDF1B0064F417 /* OthersViewController.swift in Sources */,
 				AB5E6F431F5FC4AB0064F417 /* RootTabBarController.swift in Sources */,
+				ABD7994C1F832BBA006B75F3 /* Post.swift in Sources */,
 				ABD799441F7B82E3006B75F3 /* BorderButton.swift in Sources */,
+				ABD7994E1F832CCE006B75F3 /* User.swift in Sources */,
 				ABD799421F7B7FFF006B75F3 /* PostViewController.swift in Sources */,
 				ABD7994A1F7B97E5006B75F3 /* UserPageViewController.swift in Sources */,
 				ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */,
+				ABD799501F832CE5006B75F3 /* Comment.swift in Sources */,
 				AB5E6F451F5FC73D0064F417 /* SignInViewController.swift in Sources */,
 				AB5E6F511F5FDF4D0064F417 /* SettingViewController.swift in Sources */,
 				AB5E6F531F78A5FA0064F417 /* EditUserInfoViewController.swift in Sources */,
