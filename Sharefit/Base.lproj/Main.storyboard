@@ -357,10 +357,10 @@
             </objects>
             <point key="canvasLocation" x="4280.8000000000002" y="45.42728635682159"/>
         </scene>
-        <!--View Controller-->
+        <!--Trainning List View Controller-->
         <scene sceneID="WFr-NJ-99J">
             <objects>
-                <viewController id="LlM-k6-AKA" sceneMemberID="viewController">
+                <viewController id="LlM-k6-AKA" customClass="TrainningListViewController" customModule="Sharefit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8HD-kz-KvM"/>
                         <viewControllerLayoutGuide type="bottom" id="6ls-h2-vpz"/>
@@ -374,7 +374,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="YWM-Kw-Txy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrainningListCell" rowHeight="66" id="YWM-Kw-Txy">
                                         <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YWM-Kw-Txy" id="PPj-Nk-iLO">
@@ -390,6 +390,9 @@
                     <navigationItem key="navigationItem" id="TIO-L3-ZD2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XNy-L0-ZBI"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="trainningListTableView" destination="A0m-RB-3aP" id="Mun-iB-Hy1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezc-L1-tgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

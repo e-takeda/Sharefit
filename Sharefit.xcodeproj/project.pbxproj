@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1AD50B1F84D08D00821C46 /* Trainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50A1F84D08D00821C46 /* Trainning.swift */; };
+		AB1AD50F1F84D27A00821C46 /* TrainningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */; };
 		AB5E6F2C1F5692D40064F417 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F2B1F5692D40064F417 /* Signin.storyboard */; };
 		AB5E6F2F1F5698420064F417 /* trainning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F2E1F5698420064F417 /* trainning@2x.png */; };
 		AB5E6F331F5698630064F417 /* MoreFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F321F5698630064F417 /* MoreFilled@2x.png */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		159BA10D0238E4D6A6DDB7D6 /* Pods-Sharefit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.release.xcconfig"; sourceTree = "<group>"; };
 		4E3189DCC099CFDACC0EFC97 /* Pods-Sharefit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.debug.xcconfig"; sourceTree = "<group>"; };
+		AB1AD50A1F84D08D00821C46 /* Trainning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainning.swift; sourceTree = "<group>"; };
+		AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainningListViewController.swift; sourceTree = "<group>"; };
 		AB5E6F2B1F5692D40064F417 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		AB5E6F2E1F5698420064F417 /* trainning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trainning@2x.png"; sourceTree = "<group>"; };
 		AB5E6F321F5698630064F417 /* MoreFilled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreFilled@2x.png"; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				ABD799551F849DAA006B75F3 /* MemoryViewController.swift */,
 				ABD799571F849DB9006B75F3 /* SearchViewController.swift */,
 				ABD7995D1F84B885006B75F3 /* MyTrainningViewController.swift */,
+				AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				ABD7994B1F832BBA006B75F3 /* Post.swift */,
 				ABD7994D1F832CCE006B75F3 /* User.swift */,
 				ABD7994F1F832CE5006B75F3 /* Comment.swift */,
+				AB1AD50A1F84D08D00821C46 /* Trainning.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -388,7 +394,9 @@
 				ABD7995E1F84B885006B75F3 /* MyTrainningViewController.swift in Sources */,
 				ABD799581F849DB9006B75F3 /* SearchViewController.swift in Sources */,
 				ABD799501F832CE5006B75F3 /* Comment.swift in Sources */,
+				AB1AD50F1F84D27A00821C46 /* TrainningListViewController.swift in Sources */,
 				AB5E6F451F5FC73D0064F417 /* SignInViewController.swift in Sources */,
+				AB1AD50B1F84D08D00821C46 /* Trainning.swift in Sources */,
 				AB5E6F511F5FDF4D0064F417 /* SettingViewController.swift in Sources */,
 				AB5E6F531F78A5FA0064F417 /* EditUserInfoViewController.swift in Sources */,
 				AB5E6F3F1F56A7570064F417 /* SignUpViewController.swift in Sources */,
