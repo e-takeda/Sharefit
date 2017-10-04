@@ -1,0 +1,38 @@
+PODS:
+  - Kingfisher (3.10.4)
+  - NCMB (2.3.7)
+  - NYXImagesKit (2.3)
+  - SVProgressHUD (2.2.1)
+  - UITextView+Placeholder (1.2.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - NCMB (from `https://github.com/NIFTYCloud-mbaas/ncmb_ios.git`)
+  - NYXImagesKit
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+  - UITextView+Placeholder (~> 1.2)
+
+EXTERNAL SOURCES:
+  NCMB:
+    :git: https://github.com/NIFTYCloud-mbaas/ncmb_ios.git
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  NCMB:
+    :commit: 75a1b1b1b7c656dbb5da59b0ac10bd9d4754c226
+    :git: https://github.com/NIFTYCloud-mbaas/ncmb_ios.git
+  SVProgressHUD:
+    :commit: fe8e9d9a4bd8974fdd1b1d3eee85ee6d8141da83
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
+  NCMB: 705b707898a144664e033321d679859f18533803
+  NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
+  UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
+
+PODFILE CHECKSUM: 73cbfe804778ad9f318839a6e8ae9b49d12cc048
+
+COCOAPODS: 1.2.1

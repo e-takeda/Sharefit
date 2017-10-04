@@ -37,6 +37,11 @@
 		ABD7994C1F832BBA006B75F3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7994B1F832BBA006B75F3 /* Post.swift */; };
 		ABD7994E1F832CCE006B75F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7994D1F832CCE006B75F3 /* User.swift */; };
 		ABD799501F832CE5006B75F3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7994F1F832CE5006B75F3 /* Comment.swift */; };
+		ABD799521F849BC8006B75F3 /* photo-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD799511F849BC8006B75F3 /* photo-placeholder@2x.png */; };
+		ABD799541F849D7F006B75F3 /* TrainningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799531F849D7F006B75F3 /* TrainningViewController.swift */; };
+		ABD799561F849DAA006B75F3 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799551F849DAA006B75F3 /* MemoryViewController.swift */; };
+		ABD799581F849DB9006B75F3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD799571F849DB9006B75F3 /* SearchViewController.swift */; };
+		ABD7995E1F84B885006B75F3 /* MyTrainningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD7995D1F84B885006B75F3 /* MyTrainningViewController.swift */; };
 		ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499911F4D5031004B9462 /* AppDelegate.swift */; };
 		ABE499941F4D5031004B9462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499931F4D5031004B9462 /* ViewController.swift */; };
 		ABE499971F4D5031004B9462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE499951F4D5031004B9462 /* Main.storyboard */; };
@@ -78,6 +83,11 @@
 		ABD7994B1F832BBA006B75F3 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ABD7994D1F832CCE006B75F3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ABD7994F1F832CE5006B75F3 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		ABD799511F849BC8006B75F3 /* photo-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-placeholder@2x.png"; sourceTree = "<group>"; };
+		ABD799531F849D7F006B75F3 /* TrainningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainningViewController.swift; sourceTree = "<group>"; };
+		ABD799551F849DAA006B75F3 /* MemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
+		ABD799571F849DB9006B75F3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		ABD7995D1F84B885006B75F3 /* MyTrainningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrainningViewController.swift; sourceTree = "<group>"; };
 		ABE4998E1F4D5031004B9462 /* Sharefit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharefit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE499911F4D5031004B9462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE499931F4D5031004B9462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +113,7 @@
 		AB5E6F2D1F5695570064F417 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ABD799511F849BC8006B75F3 /* photo-placeholder@2x.png */,
 				AB5E6F4C1F5FDCF80064F417 /* Heart@2x.png */,
 				AB5E6F2E1F5698420064F417 /* trainning@2x.png */,
 				AB5E6F381F5698910064F417 /* search@2x.png */,
@@ -135,6 +146,10 @@
 				ABD799411F7B7FFF006B75F3 /* PostViewController.swift */,
 				AB5E6F441F5FC73D0064F417 /* SignInViewController.swift */,
 				AB5E6F521F78A5FA0064F417 /* EditUserInfoViewController.swift */,
+				ABD799531F849D7F006B75F3 /* TrainningViewController.swift */,
+				ABD799551F849DAA006B75F3 /* MemoryViewController.swift */,
+				ABD799571F849DB9006B75F3 /* SearchViewController.swift */,
+				ABD7995D1F84B885006B75F3 /* MyTrainningViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -284,6 +299,7 @@
 				AB5E6F3B1F569CE00064F417 /* feather@2x.png in Resources */,
 				AB5E6F5B1F7B668B0064F417 /* heart-fill@2x.png in Resources */,
 				AB5E6F331F5698630064F417 /* MoreFilled@2x.png in Resources */,
+				ABD799521F849BC8006B75F3 /* photo-placeholder@2x.png in Resources */,
 				ABD7993A1F7B7908006B75F3 /* icons8-Delete-48@2x.png in Resources */,
 				ABE4999C1F4D5031004B9462 /* LaunchScreen.storyboard in Resources */,
 				ABE499991F4D5031004B9462 /* Assets.xcassets in Resources */,
@@ -358,7 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE499941F4D5031004B9462 /* ViewController.swift in Sources */,
+				ABD799541F849D7F006B75F3 /* TrainningViewController.swift in Sources */,
 				AB5E6F561F7B63750064F417 /* TimelineTableViewCell.swift in Sources */,
+				ABD799561F849DAA006B75F3 /* MemoryViewController.swift in Sources */,
 				AB5E6F4F1F5FDF1B0064F417 /* OthersViewController.swift in Sources */,
 				AB5E6F431F5FC4AB0064F417 /* RootTabBarController.swift in Sources */,
 				ABD7994C1F832BBA006B75F3 /* Post.swift in Sources */,
@@ -367,6 +385,8 @@
 				ABD799421F7B7FFF006B75F3 /* PostViewController.swift in Sources */,
 				ABD7994A1F7B97E5006B75F3 /* UserPageViewController.swift in Sources */,
 				ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */,
+				ABD7995E1F84B885006B75F3 /* MyTrainningViewController.swift in Sources */,
+				ABD799581F849DB9006B75F3 /* SearchViewController.swift in Sources */,
 				ABD799501F832CE5006B75F3 /* Comment.swift in Sources */,
 				AB5E6F451F5FC73D0064F417 /* SignInViewController.swift in Sources */,
 				AB5E6F511F5FDF4D0064F417 /* SettingViewController.swift in Sources */,
