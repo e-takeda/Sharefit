@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyTrainningViewController: UIViewController ,UITableViewDataSource{
+class MyTrainningViewController: UIViewController ,UITableViewDataSource ,UITableViewDelegate{
     
     
     @IBOutlet var MyTrainningTableView: UITableView!
@@ -21,6 +21,7 @@ class MyTrainningViewController: UIViewController ,UITableViewDataSource{
         
         
         MyTrainningTableView.dataSource = self
+        MyTrainningTableView.delegate = self
 
         // Do any additional setup after loading the view.
     }

@@ -11,7 +11,8 @@ import UIKit
 class Trainning {
     
     
-    static let selectedTrainning = Trainning()
+    static var selectedTrainning = Trainning()
+    
     var title: String?
     var count: Int?
     var set: Int?

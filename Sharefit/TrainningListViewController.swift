@@ -9,15 +9,21 @@
 
 import UIKit
 
-class TrainningListViewController: UIViewController ,UITableViewDataSource ,UITableViewDelegate{
+class TrainningListVvarController: UIViewController ,UITableViewDataSource ,UITableViewDelegate{
     
-    
+    var sample = [Trainning]()
     
     @IBOutlet var trainningListTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let training1 = Trainning()
+        training1.title = "腕立て"
+        training1.count = 10
+        
+        sample.append(training1)
         
         trainningListTableView.dataSource = self
         trainningListTableView.delegate = self
@@ -33,17 +39,21 @@ class TrainningListViewController: UIViewController ,UITableViewDataSource ,UITa
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return sample.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrainningListCell")!
-        cell.textLabel?.text = "a"
-        
-        
+        cell.textLabel?.text = sample[indexPath.row].title
+
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Tap
+        Trainning.selectedTrainning = sample[indexPath.row]
+        self.navigationController?.popViewController(animated: true)
+    }
 
 
 

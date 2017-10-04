@@ -32,6 +32,10 @@ class TrainningViewController: UIViewController ,UITableViewDataSource{
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print(Trainning.selectedTrainning.count)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

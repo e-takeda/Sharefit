@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AB1AD50B1F84D08D00821C46 /* Trainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50A1F84D08D00821C46 /* Trainning.swift */; };
 		AB1AD50F1F84D27A00821C46 /* TrainningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */; };
+		AB1AD5121F84D8B900821C46 /* MyTrainningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD5101F84D8B900821C46 /* MyTrainningTableViewCell.swift */; };
+		AB1AD5131F84D8B900821C46 /* MyTrainningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1AD5111F84D8B900821C46 /* MyTrainningTableViewCell.xib */; };
 		AB5E6F2C1F5692D40064F417 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F2B1F5692D40064F417 /* Signin.storyboard */; };
 		AB5E6F2F1F5698420064F417 /* trainning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F2E1F5698420064F417 /* trainning@2x.png */; };
 		AB5E6F331F5698630064F417 /* MoreFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5E6F321F5698630064F417 /* MoreFilled@2x.png */; };
@@ -57,6 +59,8 @@
 		4E3189DCC099CFDACC0EFC97 /* Pods-Sharefit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.debug.xcconfig"; sourceTree = "<group>"; };
 		AB1AD50A1F84D08D00821C46 /* Trainning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainning.swift; sourceTree = "<group>"; };
 		AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainningListViewController.swift; sourceTree = "<group>"; };
+		AB1AD5101F84D8B900821C46 /* MyTrainningTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrainningTableViewCell.swift; sourceTree = "<group>"; };
+		AB1AD5111F84D8B900821C46 /* MyTrainningTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTrainningTableViewCell.xib; sourceTree = "<group>"; };
 		AB5E6F2B1F5692D40064F417 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		AB5E6F2E1F5698420064F417 /* trainning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trainning@2x.png"; sourceTree = "<group>"; };
 		AB5E6F321F5698630064F417 /* MoreFilled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreFilled@2x.png"; sourceTree = "<group>"; };
@@ -150,10 +154,10 @@
 				ABD799411F7B7FFF006B75F3 /* PostViewController.swift */,
 				AB5E6F441F5FC73D0064F417 /* SignInViewController.swift */,
 				AB5E6F521F78A5FA0064F417 /* EditUserInfoViewController.swift */,
-				ABD799531F849D7F006B75F3 /* TrainningViewController.swift */,
 				ABD799551F849DAA006B75F3 /* MemoryViewController.swift */,
 				ABD799571F849DB9006B75F3 /* SearchViewController.swift */,
 				ABD7995D1F84B885006B75F3 /* MyTrainningViewController.swift */,
+				ABD799531F849D7F006B75F3 /* TrainningViewController.swift */,
 				AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */,
 			);
 			name = Controllers;
@@ -168,6 +172,8 @@
 				ABE4999A1F4D5031004B9462 /* LaunchScreen.storyboard */,
 				AB5E6F2B1F5692D40064F417 /* Signin.storyboard */,
 				ABD799431F7B82E3006B75F3 /* BorderButton.swift */,
+				AB1AD5101F84D8B900821C46 /* MyTrainningTableViewCell.swift */,
+				AB1AD5111F84D8B900821C46 /* MyTrainningTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 				ABD7993E1F7B798C006B75F3 /* Checkmark-48@2x.png in Resources */,
 				AB5E6F5D1F7B668B0064F417 /* icons8-Speech Bubble-50.png in Resources */,
 				AB5E6F5F1F7B66C90064F417 /* icons8-More-48@2x.png in Resources */,
+				AB1AD5131F84D8B900821C46 /* MyTrainningTableViewCell.xib in Resources */,
 				AB5E6F3B1F569CE00064F417 /* feather@2x.png in Resources */,
 				AB5E6F5B1F7B668B0064F417 /* heart-fill@2x.png in Resources */,
 				AB5E6F331F5698630064F417 /* MoreFilled@2x.png in Resources */,
@@ -381,6 +388,7 @@
 			files = (
 				ABE499941F4D5031004B9462 /* ViewController.swift in Sources */,
 				ABD799541F849D7F006B75F3 /* TrainningViewController.swift in Sources */,
+				AB1AD5121F84D8B900821C46 /* MyTrainningTableViewCell.swift in Sources */,
 				AB5E6F561F7B63750064F417 /* TimelineTableViewCell.swift in Sources */,
 				ABD799561F849DAA006B75F3 /* MemoryViewController.swift in Sources */,
 				AB5E6F4F1F5FDF1B0064F417 /* OthersViewController.swift in Sources */,
