@@ -17,6 +17,8 @@ class Trainning {
     var count: Int?
     var set: Int?
     var weight: Int?
+    var image: UIImage?
+    var detail: String?
     
     init() {
         // これだけはnilなし変数を作る際に使う

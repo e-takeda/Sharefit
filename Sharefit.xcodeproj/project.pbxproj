@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88B300511F8D6B1E005931F4 /* MyTrainningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B300501F8D6B1E005931F4 /* MyTrainningListViewController.swift */; };
+		88B300531F8DC5CA005931F4 /* AddMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B300521F8DC5CA005931F4 /* AddMenuViewController.swift */; };
 		AB1AD50B1F84D08D00821C46 /* Trainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50A1F84D08D00821C46 /* Trainning.swift */; };
 		AB1AD50F1F84D27A00821C46 /* TrainningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */; };
 		AB1AD5121F84D8B900821C46 /* MyTrainningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD5101F84D8B900821C46 /* MyTrainningTableViewCell.swift */; };
@@ -57,6 +59,10 @@
 /* Begin PBXFileReference section */
 		159BA10D0238E4D6A6DDB7D6 /* Pods-Sharefit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.release.xcconfig"; sourceTree = "<group>"; };
 		4E3189DCC099CFDACC0EFC97 /* Pods-Sharefit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharefit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sharefit/Pods-Sharefit.debug.xcconfig"; sourceTree = "<group>"; };
+		88B3004F1F8D64F4005931F4 /* Features@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Features@2x.png"; path = "../../../Downloads/Features@2x.png"; sourceTree = "<group>"; };
+		88B300501F8D6B1E005931F4 /* MyTrainningListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrainningListViewController.swift; sourceTree = "<group>"; };
+		88B300521F8DC5CA005931F4 /* AddMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuViewController.swift; sourceTree = "<group>"; };
+		88B300541F8DC7AE005931F4 /* グラフ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "グラフ.jpg"; path = "../../../Downloads/グラフ.jpg"; sourceTree = "<group>"; };
 		AB1AD50A1F84D08D00821C46 /* Trainning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainning.swift; sourceTree = "<group>"; };
 		AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainningListViewController.swift; sourceTree = "<group>"; };
 		AB1AD5101F84D8B900821C46 /* MyTrainningTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrainningTableViewCell.swift; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 		AB5E6F2D1F5695570064F417 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				88B300541F8DC7AE005931F4 /* グラフ.jpg */,
+				88B3004F1F8D64F4005931F4 /* Features@2x.png */,
 				ABD799511F849BC8006B75F3 /* photo-placeholder@2x.png */,
 				AB5E6F4C1F5FDCF80064F417 /* Heart@2x.png */,
 				AB5E6F2E1F5698420064F417 /* trainning@2x.png */,
@@ -159,6 +167,8 @@
 				ABD7995D1F84B885006B75F3 /* MyTrainningViewController.swift */,
 				ABD799531F849D7F006B75F3 /* TrainningViewController.swift */,
 				AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */,
+				88B300501F8D6B1E005931F4 /* MyTrainningListViewController.swift */,
+				88B300521F8DC5CA005931F4 /* AddMenuViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -397,7 +407,9 @@
 				ABD799441F7B82E3006B75F3 /* BorderButton.swift in Sources */,
 				ABD7994E1F832CCE006B75F3 /* User.swift in Sources */,
 				ABD799421F7B7FFF006B75F3 /* PostViewController.swift in Sources */,
+				88B300531F8DC5CA005931F4 /* AddMenuViewController.swift in Sources */,
 				ABD7994A1F7B97E5006B75F3 /* UserPageViewController.swift in Sources */,
+				88B300511F8D6B1E005931F4 /* MyTrainningListViewController.swift in Sources */,
 				ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */,
 				ABD7995E1F84B885006B75F3 /* MyTrainningViewController.swift in Sources */,
 				ABD799581F849DB9006B75F3 /* SearchViewController.swift in Sources */,

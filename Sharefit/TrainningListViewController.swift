@@ -22,8 +22,12 @@ class TrainningListVvarController: UIViewController ,UITableViewDataSource ,UITa
         let training1 = Trainning()
         training1.title = "腕立て"
         training1.count = 10
-        
         sample.append(training1)
+        let training2 = Trainning()
+        training2.title = "腹筋"
+        training2.count = 10
+        sample.append(training2)
+        
         
         trainningListTableView.dataSource = self
         trainningListTableView.delegate = self

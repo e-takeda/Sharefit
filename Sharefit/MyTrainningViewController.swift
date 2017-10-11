@@ -10,6 +10,8 @@ import UIKit
 
 class MyTrainningViewController: UIViewController ,UITableViewDataSource ,UITableViewDelegate{
     
+    var daylyTrainning = [String]()
+    var daylyTrainning1 = [String]()
     
     @IBOutlet var MyTrainningTableView: UITableView!
 
@@ -22,8 +24,14 @@ class MyTrainningViewController: UIViewController ,UITableViewDataSource ,UITabl
         
         MyTrainningTableView.dataSource = self
         MyTrainningTableView.delegate = self
-
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        load()
+        print(daylyTrainning1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,15 +41,24 @@ class MyTrainningViewController: UIViewController ,UITableViewDataSource ,UITabl
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return daylyTrainning1.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyTrainningCell")!
-        cell.textLabel?.text = "a"
-        
-        
+        cell.textLabel?.text = daylyTrainning1[indexPath.row]
+
         return cell
     }
+    
+    func load() {
+        let ud = UserDefaults.standard
+        if ud.array(forKey: "daylytrainningArray") != nil{
+            daylyTrainning = ud.array(forKey: "daylytrainningArray") as! [String]
+        }
+        daylyTrainning1.insert(contentsOf: daylyTrainning, at: 0)
+        MyTrainningTableView.reloadData()
+    }
+    
     
 }
