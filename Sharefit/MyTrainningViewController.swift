@@ -31,7 +31,7 @@ class MyTrainningViewController: UIViewController ,UITableViewDataSource ,UITabl
     
     override func viewWillAppear(_ animated: Bool) {
         load()
-        print(daylyTrainning1)
+        print(daylyTrainning)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,12 +41,12 @@ class MyTrainningViewController: UIViewController ,UITableViewDataSource ,UITabl
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return daylyTrainning1.count
+        return daylyTrainning.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyTrainningCell")!
-        cell.textLabel?.text = daylyTrainning1[indexPath.row]
+        cell.textLabel?.text = daylyTrainning[indexPath.row]
 
         return cell
     }
@@ -56,7 +56,7 @@ class MyTrainningViewController: UIViewController ,UITableViewDataSource ,UITabl
         if ud.array(forKey: "daylytrainningArray") != nil{
             daylyTrainning = ud.array(forKey: "daylytrainningArray") as! [String]
         }
-        daylyTrainning1.insert(contentsOf: daylyTrainning, at: 0)
+        //daylyTrainning1.insert(contentsOf: daylyTrainning, at: 0)
         MyTrainningTableView.reloadData()
     }
     

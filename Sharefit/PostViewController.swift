@@ -21,6 +21,16 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBOutlet var postImageView: UIImageView!
     @IBOutlet var postTextView: UITextView!
     @IBOutlet var postButton: UIBarButtonItem!
+    @IBOutlet var trainningLabel: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if Trainning.selectedTrainning.title != nil{
+            trainningLabel.text = Trainning.selectedTrainning.title
+        } else {
+            
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +39,7 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
 
         
         postImageView.image = placeholderImage
+        trainningLabel.text = ""
         
         postButton.isEnabled = false
         postTextView.placeholder = "キャプションを書く"

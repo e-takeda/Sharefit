@@ -60,7 +60,6 @@ class TrainningViewController: UIViewController ,UITableViewDataSource ,UITableV
         } else {
             menuButton.setTitle("menuを選択", for: .normal)
         }
-        menuButton.setTitle(Trainning.selectedTrainning.title, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -119,15 +118,28 @@ class TrainningViewController: UIViewController ,UITableViewDataSource ,UITableV
     @IBAction func done() {
         
         let date = dateTextField.text!
-        trainningArray.insert(date, at: 0)
+        trainningArray.append(date)
         
         print(daylytrainningArray)
-        daylytrainningArray.append(contentsOf: trainningArray)
+        daylytrainningArray.insert(contentsOf: trainningArray, at: 0)
         print(daylytrainningArray)
-        
         
         let ud = UserDefaults.standard
-        ud.set(daylytrainningArray, forKey: "daylytrainningArray")
+        if ud.array(forKey: "daylytrainningArray") != nil {
+            var array = ud.array(forKey: "daylytrainningArray") as! [String]
+            for t in daylytrainningArray {
+                array.insert(t, at: 0)
+            }
+            ud.set(array, forKey: "daylytrainningArray")
+        } else {
+            var array: [String] = []
+            for t in daylytrainningArray {
+                array.insert(t, at: 0)
+            }
+            ud.set(array, forKey: "daylytrainningArray")
+        }
+        
+        
         ud.synchronize()
         
         

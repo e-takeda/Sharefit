@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		88B300511F8D6B1E005931F4 /* MyTrainningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B300501F8D6B1E005931F4 /* MyTrainningListViewController.swift */; };
 		88B300531F8DC5CA005931F4 /* AddMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B300521F8DC5CA005931F4 /* AddMenuViewController.swift */; };
+		88B300571F8DE347005931F4 /* SelectTrainningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B300561F8DE347005931F4 /* SelectTrainningViewController.swift */; };
 		AB1AD50B1F84D08D00821C46 /* Trainning.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50A1F84D08D00821C46 /* Trainning.swift */; };
 		AB1AD50F1F84D27A00821C46 /* TrainningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */; };
 		AB1AD5121F84D8B900821C46 /* MyTrainningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AD5101F84D8B900821C46 /* MyTrainningTableViewCell.swift */; };
@@ -63,6 +64,9 @@
 		88B300501F8D6B1E005931F4 /* MyTrainningListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrainningListViewController.swift; sourceTree = "<group>"; };
 		88B300521F8DC5CA005931F4 /* AddMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuViewController.swift; sourceTree = "<group>"; };
 		88B300541F8DC7AE005931F4 /* グラフ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "グラフ.jpg"; path = "../../../Downloads/グラフ.jpg"; sourceTree = "<group>"; };
+		88B300551F8DD6F5005931F4 /* Simulator Screen Shot - iPhone 7 - 2017-10-11 at 13.33.28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screen Shot - iPhone 7 - 2017-10-11 at 13.33.28.png"; path = "../../Simulator Screen Shot - iPhone 7 - 2017-10-11 at 13.33.28.png"; sourceTree = "<group>"; };
+		88B300561F8DE347005931F4 /* SelectTrainningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTrainningViewController.swift; sourceTree = "<group>"; };
+		88B300581F8DEF48005931F4 /* image1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image1.PNG; path = ../../../Downloads/image1.PNG; sourceTree = "<group>"; };
 		AB1AD50A1F84D08D00821C46 /* Trainning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainning.swift; sourceTree = "<group>"; };
 		AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainningListViewController.swift; sourceTree = "<group>"; };
 		AB1AD5101F84D8B900821C46 /* MyTrainningTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrainningTableViewCell.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 		AB5E6F2D1F5695570064F417 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				88B300551F8DD6F5005931F4 /* Simulator Screen Shot - iPhone 7 - 2017-10-11 at 13.33.28.png */,
+				88B300581F8DEF48005931F4 /* image1.PNG */,
 				88B300541F8DC7AE005931F4 /* グラフ.jpg */,
 				88B3004F1F8D64F4005931F4 /* Features@2x.png */,
 				ABD799511F849BC8006B75F3 /* photo-placeholder@2x.png */,
@@ -164,6 +170,7 @@
 				AB5E6F521F78A5FA0064F417 /* EditUserInfoViewController.swift */,
 				ABD799551F849DAA006B75F3 /* MemoryViewController.swift */,
 				ABD799571F849DB9006B75F3 /* SearchViewController.swift */,
+				88B300561F8DE347005931F4 /* SelectTrainningViewController.swift */,
 				ABD7995D1F84B885006B75F3 /* MyTrainningViewController.swift */,
 				ABD799531F849D7F006B75F3 /* TrainningViewController.swift */,
 				AB1AD50E1F84D27A00821C46 /* TrainningListViewController.swift */,
@@ -413,6 +420,7 @@
 				ABE499921F4D5031004B9462 /* AppDelegate.swift in Sources */,
 				ABD7995E1F84B885006B75F3 /* MyTrainningViewController.swift in Sources */,
 				ABD799581F849DB9006B75F3 /* SearchViewController.swift in Sources */,
+				88B300571F8DE347005931F4 /* SelectTrainningViewController.swift in Sources */,
 				ABD799501F832CE5006B75F3 /* Comment.swift in Sources */,
 				AB1AD50F1F84D27A00821C46 /* TrainningListViewController.swift in Sources */,
 				AB5E6F451F5FC73D0064F417 /* SignInViewController.swift in Sources */,

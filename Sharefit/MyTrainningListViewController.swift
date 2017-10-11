@@ -29,6 +29,7 @@ class MyTrainningListViewController: UIViewController ,UITableViewDelegate ,UITa
                 print(error)
             } else {
                 self.menu = result as! [NCMBObject]
+                self.MyTrainningListTableView.reloadData()
             }
         })
     }
@@ -48,7 +49,7 @@ class MyTrainningListViewController: UIViewController ,UITableViewDelegate ,UITa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyTrainningListCell")!
         cell.textLabel?.text = menu[indexPath.row].object(forKey: "menu") as! String
-        
+        cell.detailTextLabel?.text = menu[indexPath.row].object(forKey: "detail") as! String
         
         return cell
     }

@@ -8,30 +8,39 @@
 //
 
 import UIKit
+import NCMB
 
-class TrainningListVvarController: UIViewController ,UITableViewDataSource ,UITableViewDelegate{
+
+class TrainningListViewController: UIViewController ,UITableViewDataSource ,UITableViewDelegate{
     
     var sample = [Trainning]()
+    var menu = [NCMBObject]()
     
     @IBOutlet var trainningListTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        /*
         let training1 = Trainning()
         training1.title = "腕立て"
         training1.count = 10
         sample.append(training1)
-        let training2 = Trainning()
-        training2.title = "腹筋"
-        training2.count = 10
-        sample.append(training2)
-        
+        */
         
         trainningListTableView.dataSource = self
         trainningListTableView.delegate = self
         
+        
+        let query = NCMBQuery(className: "Menu")
+        query?.findObjectsInBackground({ (result, error) in
+            if error != nil {
+                print(error)
+            } else {
+                self.menu = result as! [NCMBObject]
+                self.trainningListTableView.reloadData()
+            }
+        })
         
     }
 
@@ -43,19 +52,20 @@ class TrainningListVvarController: UIViewController ,UITableViewDataSource ,UITa
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sample.count
+        return menu.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrainningListCell")!
-        cell.textLabel?.text = sample[indexPath.row].title
+        cell.textLabel?.text = menu[indexPath.row].object(forKey: "menu") as! String
 
         return cell
+        
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Tap
-        Trainning.selectedTrainning = sample[indexPath.row]
+        Trainning.selectedTrainning.title = menu[indexPath.row].object(forKey: "menu") as! String
         self.navigationController?.popViewController(animated: true)
     }
 
